@@ -11,6 +11,6 @@ To get the code running the following steps have to be executed:
 
 3. Put the files for the model into /model/
 
-4. Setup a mysql database and create a schema called "disruptuion_detection"
+4. Setup a mysql database and create a schema called "disruption_detection"
 
 5. Execute the SQL-script (/SQL/create_table.sql) on the created schema
