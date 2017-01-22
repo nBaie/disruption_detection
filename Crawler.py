@@ -1,10 +1,13 @@
 from urllib.request import urlopen
 
-import exportToVector
+
 from boilerpipe.extract import Extractor
 import enchant
 from bs4 import BeautifulSoup
 import gensim.models as g
+
+import DBAccess
+
 dictionary = enchant.Dict("en_US")
 import logging
 logger = logging.getLogger(__name__)
@@ -59,7 +62,7 @@ def spider(url, maxPages):
     links1 = []
     links2 = []
     model = "model/my_model_d2v_py3.pkl"
-    db = exportToVector.DB_access()
+    db = DBAccess.DB_access()
 
     f = open("links0.txt").read().split()
     for word in f:
