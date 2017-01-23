@@ -61,7 +61,7 @@ def spider(url, maxPages):
     links0 = []
     links1 = []
     links2 = []
-    model = "model/my_model_d2v_py3.pkl"
+    model = "model/doc2vec.pkl"
     db = DBAccess.DB_access()
 
     f = open("example0.txt").read().split()
@@ -85,7 +85,7 @@ def spider(url, maxPages):
     except:
         print(" **Failed!**")
     counter = 0
-    db.open_db("Doc_Banking_zwei")
+    db.open_db("Documents")
 
     # Vektoren aus bespieldkomunten ableiten. Sie bleiben so konstant und werden nur einmal berechnet
     b = myModel.infer_vector(links0, steps=5, alpha=0.005)

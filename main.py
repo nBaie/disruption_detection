@@ -12,8 +12,8 @@ Crawler.getTextFromLink("http://lecocqassociate.com/news/structuring-traditional
 Crawler.getTextFromLink("http://fintechprofile.com/2016/05/13/traditional-banking-business-model-vs-focusing-consumer-whats-next/", 2)
 
 # startet crawling von jeweiligen Seeds
-Crawler.spider("http://www.businessinsider.de/s?q=banking", 1500)
-Crawler.spider("http://www.chambers-associate.com/practice-areas/banking-and-finance", 1500)
+Crawler.spider("http://www.businessinsider.de/s?q=banking", 15)
+Crawler.spider("http://www.chambers-associate.com/practice-areas/banking-and-finance", 5)
 
 # löschen von duplikaten
 db = DBAccess.DB_access()

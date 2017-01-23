@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from sklearn.svm import OneClassSVM
 import warnings
 import DBAccess
@@ -32,7 +31,7 @@ def focus():
     clf.fit(train_vectors)
 
     # speichert die Werte der decision Funktion in der DB
-    # später können Dokumente mit zu kleinem Wert aussortiert werden um DAten zu fokussieren
+    # später können Dokumente mit zu kleinem Wert aussortiert werden um Daten zu fokussieren
     for data in train_data:
         tmp = clf.decision_function(data.Vector)[0][0].item()
         db.save_decision(tmp, data.DocumentId)
