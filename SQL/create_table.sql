@@ -8,7 +8,3 @@ create table disruption_detection.Documents (
     decision_value float,
     url mediumtext,
     PRIMARY KEY (`idDocuments`));
-
-#keine Text-Duplikate einfügen
-ALTER IGNORE TABLE `Documents`
-ADD UNIQUE INDEX (`text`);

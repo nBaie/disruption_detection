@@ -119,3 +119,10 @@ class DB_access:
                 doc = Beans.doc_interessant(row['idinteressant'], row['text'])
                 docs.append(doc)
         return docs
+
+    # löscht duplikate aus der DB
+    def delete_duplicates(self):
+        with self.connection.cursor() as cursor:
+            sql = "DELETE d1 FROM Documents d1, Documents d2 WHERE d1.idDocuments < d2.idDocuments AND d1.text = d2.text"
+            cursor.execute(sql)
+            self.connection.commit()
