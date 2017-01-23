@@ -1,7 +1,6 @@
 # disruption_detection
-web mining application for competitor analysis and disruption detection
 
-This project contains the code written for the thesis: "web mining applications for competitor analysis and disruption detection" 
+This project contains the code written for the thesis: "Web Mining Applications for Competitor Analysis and Disruption Detection" 
 
 To get the code running the following steps have to be executed (explanation for python 3.4):
 ===============================================================
