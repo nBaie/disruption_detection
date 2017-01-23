@@ -1,7 +1,7 @@
 # disruption_detection
 web mining application for competitor analysis and disruption detection
 
-This is a project contains the code written for the thesis: "web mining applications for competitor analysis and disruption detection" 
+This project contains the code written for the thesis: "web mining applications for competitor analysis and disruption detection" 
 
 To get the code running the following steps have to be executed (explanation for python 3.4):
 ===============================================================
@@ -17,7 +17,7 @@ To get the code running the following steps have to be executed (explanation for
 
 5. Install the following packages for python: enchant, bs4, gensim, sklearn, pymysql
 
-6. Download boilerpipe [Boilerpipe sources](https://github.com/misja/python-boilerpipe)  
+6. Download [Boilerpipe sources](https://github.com/misja/python-boilerpipe)  
     6.1 Install JPype1-py3  
     6.2 Replace setup.py by our uploaded setup.py(Boilerpipe/setup.py)  
     6.3 Run Setup.py (sudo python setup.py install)  
